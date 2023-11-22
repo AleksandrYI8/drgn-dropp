@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/style.scss">
+	<title>Vite App</title>
+</head>
+
+<body>
+
+
+	<center>
+		<form>
+			<input type="text" name="title">
+			<input type="text" name="description">
+			<select name="status" id="">
+				<option value="0">todo</option>
+				<option value="1">inprogress</option>
+				<option value="2">done</option>
+			</select>
+			<button>send</button>
+		</form>
+	</center>
+
+	<div class="container">
+
+		<div class="empty" data-status="0" >
+			<span>todo</span>
+		</div>
+		<div class="empty" data-status="1" >
+			<span>inprogress</span>
+
+		</div>
+		<div class="empty" data-status="2" >
+			<span>done</span>
+
+		</div>
+
+		<div draggable="true" class="rubish">
+			<img src="./icons/rubish.svg" alt="rubish">
+		</div>
+
+	</div>
+
+	<script type="module" src="/main.js"></script>
+	<script type="module" src="/modules/forms.js"></script>
+</body>
+
+</html>
